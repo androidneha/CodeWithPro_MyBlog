@@ -1,0 +1,345 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+.carousel-inner .carousel-caption p
+{
+  margin-bottom: -5px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.navbar
+{
+  border-radius: 0px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #000000;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-width: 0.2px;
+  border-bottom-color: #DBD3D1;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+.sidebar-module-inset img
+{
+width: 213px;
+    height: 170px;
+}
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.read_more a
+{
+  border-style: solid;
+  border-color: #CED3CD;
+  border-width: 0.2px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.read_more a:hover
+{
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.2px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom:80px;
+  margin-top: 30px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+*
+*
+*/
+
+.blog_img
+{
+  margin-bottom: 20px;
+  margin-top: 0px;
+  float: left;
+}
+.blog_img img
+{
+width: 210px;
+height: 160px ; 
+margin-right: 30px
+}
+.blog-post .blog-post-title
+{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 20px; 
+   font-size: 20px;
+   color: #000000;
+       /* fallback */
+   max-height: 42px;      /* fallback */
+   -webkit-box-orient: vertical;
+}
+.blog-data
+{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 20px;     /* fallback */
+   max-height: 62px;      /* fallback */
+   -webkit-box-orient: vertical;
+}
+.container .popular_tutorials h4
+{
+  margin-top: 40px;
+  color: #000000;
+  border-bottom-style: solid;
+  border-bottom-color: #D6CECD;
+  border-bottom-width: 1px;
+  margin-bottom: 20px;
+}
+.container .popular_tutorials li 
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container .popular_tutorials li a
+{
+  text-decoration: none;
+  color: #494747;
+}
+
+.container .popular_tutorials li a:hover
+{
+  text-decoration: underline;
+  color: #000000;
+}
+
+@media screen and (min-width: 480px) {
+   .carousel-inner .item img
+   {
+      height: 200px;
+   }
+}
+@media screen and (min-width: 750px) {
+   .carousel-inner .item img
+   {
+      height: 350px;
+   }
+}
+
+/*
+*Login Form CSS
+*/
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+/*
+* Login Form Css Completed
+*/
