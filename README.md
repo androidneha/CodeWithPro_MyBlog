@@ -1,0 +1,1 @@
+Blog example like androidhive
